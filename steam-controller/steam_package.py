@@ -7,7 +7,7 @@ import remapPackage from steam_package
 
     packege_list = {
 
-
+        unix_packages == [
 
                 "proton == 4.12",
                 "wine",
@@ -27,6 +27,17 @@ import remapPackage from steam_package
                 "zenity"
                 "wine_runner"
                 "wine_java_compl"
-    }
 
+        ]
+
+
+        windows_packages == [
+
+                    "vid_codec64",
+                    "vid_codec32",
+                    "xp_installer",
+                    "sh_reloader"
+        ]
+
+    }
 
