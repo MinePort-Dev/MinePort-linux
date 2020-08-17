@@ -2,6 +2,12 @@
 
 # Navigation
 
+1. [Install](https://github.com/MinePort-Dev/MinePort-linux#install)
+2. [Preparing for the game](https://github.com/MinePort-Dev/MinePort-linux#preparing-for-the-game) 
+3. [What versions does the program run on?](https://github.com/MinePort-Dev/MinePort-linux#what-versions-does-the-program-run-on)
+4. [How to update?](https://github.com/MinePort-Dev/MinePort-linux#how-to-update)
+5. [Any more questions?](https://github.com/MinePort-Dev/MinePort-linux#any-more-questions)
+
 # Install
 Install the repository via git:
 ```bash
