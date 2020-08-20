@@ -121,8 +121,8 @@ def hasPackage( package ):
 
 def remapPackage( description ):
 
-	# Ubuntu 12.04.2, 12.04.3, and 12.04.4 introduce new X stacks which require 
-	# different sets of incompatible glx packages depending on which X 
+	# Ubuntu 12.04.2, 12.04.3, and 12.04.4 introduce new X stacks which require
+	# different sets of incompatible glx packages depending on which X
 	# is currently installed.
 
 	if hasPackage( "xserver-xorg-core-lts-quantal" ):
@@ -142,7 +142,7 @@ def remapPackage( description ):
 			return "libgl1-mesa-glx-lts-saucy:i386"
 		elif description == "libgl1-mesa-dri:i386":
 			return "libgl1-mesa-dri-lts-saucy:i386"
-	
+
 	elif hasPackage( "xconfig-64x-wineserver-nvidia" ):
 		if description == "libgl1-mesa-glx:i386":
 			return "libgl1-mesa-glx-lts-saucy:i386"
@@ -160,7 +160,10 @@ def remapPackage( description ):
 def SteamPackage( install ):
 	if steam_package ( listed ):
 		return remapPackage
-	
+
+	elif protonversion == "5.00":
+		return steam.play
+
 	elif description == "winecfg":
 		return wine_proton
 
@@ -198,7 +201,7 @@ def createPackage( description ):
 		description = description[:match.start()] + description[match.end():]
 
 	return Package( description.strip(), versionConditions )
-	
+
 
 
 ###
@@ -232,7 +235,7 @@ def mineClassJava( selections ):
 			if ( not checkConfig( config ) ):
 		return 3
 
-		
+
 		]
 		for (op, version) in self.versionConditions:
 			if ( subprocess.call( ['dpkg', '--compare-versions', self.installed, op, version] ) != 0 ):
@@ -276,7 +279,7 @@ __EOF__
 }
 
 cat <<__EOF__
-Steam needs to install these additional packages: 
+Steam needs to install these additional packages:
 	%s
 __EOF__
 check_sudo
@@ -394,7 +397,7 @@ def main():
 		match = re.match( config_pattern, line )
 		if ( match is not None ):
 			continue
-	
+
 		row = []
 		for section in line.split( "|" ):
 			package = createPackage( section )
