@@ -10,7 +10,7 @@ import remapPackage from steam_package
                 "wine",
                 "wine32",
                 "wine64",
-                "wineserver",
+#                "wineserver",
                 "wineconfig",
                 "xconfig",
                 "POL_wineconfig",
@@ -19,14 +19,13 @@ import remapPackage from steam_package
                 "wine_desktop",
                 "wine_dir",
                 "wine_terminal",
-                "gnome_wine_loader"
-                "xetrm"
-                "zenity"
-                "wine_runner"
-                "wine_java_compl"
+                "gnome_wine_loader",
+                "xetrm",
+                "zenity",
+                "wine_runner",
+                "wine_java_compl",
+                "POL_steam_loader",
+                "POL_steam_flags"
+
 
         }
-
-
-
-
