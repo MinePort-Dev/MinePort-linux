@@ -9,6 +9,7 @@ import subprocess
 import sys
 import tempfile
 import minecraft-config
+import POL_steam_runtime
 
 
 def getFull( gamepad ):
@@ -74,3 +75,11 @@ class Gamepad:
     			row.append( package )
 
     		dependencies.append( row )
+
+
+
+def class winecfg( Res ):
+    """docstring fo winecfg. Res
+    def __init__(self, arg):
+        supe winecfg, Res .__init__()
+        self.arg = arg
