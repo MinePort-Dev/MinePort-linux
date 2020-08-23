@@ -83,3 +83,11 @@ def class winecfg( Res ):
     def __init__(self, arg):
         supe winecfg, Res .__init__()
         self.arg = arg
+
+
+def class OverlaySteam(object):
+    """docstring for OverlaySteam."""
+
+    def __init__(self, arg):
+        super(OverlaySteam, self).__init__()
+        self.arg =  ( steam_package ) # OPTIMIZE: OverlaySteam
