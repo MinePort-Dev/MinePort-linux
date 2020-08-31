@@ -3,10 +3,10 @@
 # Navigation
 
 1. [Install](https://github.com/MinePort-Dev/MinePort-linux#install)
-2. [Preparing for the game](https://github.com/MinePort-Dev/MinePort-linux#preparing-for-the-game) 
+2. [Preparing for the game](https://github.com/MinePort-Dev/MinePort-linux#preparing-for-the-game)
 3. [What versions does the program run on?](https://github.com/MinePort-Dev/MinePort-linux#what-versions-does-the-program-run-on)
 4. [How to update?](https://github.com/MinePort-Dev/MinePort-linux#how-to-update)
-5. [Any more questions?](https://github.com/MinePort-Dev/MinePort-linux#any-more-questions)
+5. [Any more questions?](https://github.com/MinePort-Dev/MinePort-linux#Support)
 
 # Install
 Install the repository via git:
@@ -56,6 +56,10 @@ Be sure to install git -> [Download](https://git-scm.com/)
 
 ```$ sh updater.sh```
 
-# Any more questions?
+# # Support
 
-Write to me by telegram([@alderoo](http://t.me/alderoo))
+<div>
+  <a target="_blank" href="https://discord.gg/7xrxJta" title="Join our Discord!">
+    <img height="75px" draggable="false" src="https://media.discordapp.net/attachments/749281232554164234/750060979802603672/IMG_5231.JPG" alt="Join our Discord!">
+  </a>
+</div>
